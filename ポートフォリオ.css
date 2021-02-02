@@ -1,0 +1,498 @@
+*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body{
+  font-size: 15px;
+  font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  line-height: 1.8;
+}
+
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+ul {
+  list-style: none;
+}
+
+/*背景画像自動切り替え*/
+.bg-slider {
+  width: 100%;
+  height: 100%;
+	background-size: cover;
+	background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*header*/
+.header {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/*ヘッダー右*/
+.header ul {
+  height: 50px;
+  width: 650px;
+  margin:0;
+  padding: 50px 0;
+  float: right;
+}
+
+.header ul li {
+  float: left;
+  padding-right: 120px;
+}
+
+.header li:last-child {
+  padding:0;
+}
+
+.header a {
+  color: white;
+  font-size: 24px;
+}
+/*ヘッダーhover*/
+.header a:hover {
+  color: #000;
+}
+
+/*ここからメイン*/
+
+.main-top {
+  width: 100%;
+  text-align: center;
+}
+
+.main-top img{
+  width: 100%;
+  height:800px;
+}
+
+/*プロフィール*/
+.profile {
+  padding:190px 0;
+  width: 60%;
+  margin:0 auto;
+  text-align: center;
+  background-color:rgba(255,255,255,0.9);
+  font-size: 18px;
+}
+
+/*ボール回転*/
+.profile img {
+  height: 110px;
+  width: 110px;
+  animation: rotate-anime 9s linear infinite;
+}
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);}
+}
+
+/*スキル*/
+.skill {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 55px;
+  text-align: center;
+  background-color:rgba(255,255,255,0.9);
+}
+
+.skill img {
+  height: 110px;
+  width: 110px;
+  animation: rotate-anime 9s linear infinite;
+}
+@keyframes rotate-anime {
+  0%  {transform: rotate(0);}
+  100%  {transform: rotate(360deg);} 
+}
+
+.skill h2 {
+  font-size: 56px;
+}
+
+/*スキルリスト*/
+.skill-box {
+  width: 60%;
+  height: 100%;
+  margin:0 auto;
+  padding-bottom: 145px;
+  background-color:rgba(255,255,255,0.9);
+  display:flex;
+}
+
+.skill-list {
+  width: 35%;
+  display: inline-block;
+  padding:10px 10px;
+  margin-right: 50px;
+}
+
+.skill-list:last-child {
+  margin-right: 0;
+}
+
+.skill-list img,h3 {
+  text-align: center;
+}
+
+.skill-list img {
+  display:block;
+  margin: 0 auto;
+}
+
+.skill-list p {
+  text-align: left;
+}
+
+/*works*/
+.works {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color:rgba(255,255,255,0.9);
+}
+
+.works h2 {
+  font-size: 56px;
+  padding-bottom: 55px;
+}
+
+/*ページめくり*/
+#works {
+  height: 400px;
+  width: 90%;
+  margin:0 auto;
+}
+
+.works ul {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.works ul li {
+  width: 50%;
+  float: left;
+}
+
+.works ul::after {
+  content: "";
+  display:block;
+  clear: both;
+}
+
+#prevpage, #nextpage {
+  cursor: pointer;
+}
+
+.works span {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.works span:hover {
+  color: blue;
+  opacity: 0.7;
+}
+
+#works img {
+  width: 100%;
+  height: 100%;
+}
+
+/*about*/
+.about {
+  height: 270px;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 55px;
+  background-color:rgba(255,255,255,0.9); 
+}
+
+.about img {
+  height: 100%;
+  width: 30%;
+  margin: 0 30px 30px 20px;
+  float: left;
+}
+
+.about p {
+  height: 270px;
+  width: 100%;
+}
+
+/* ページトップボタン */
+.page-top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 99;
+}
+
+.page-top img {
+  height: 65px;
+	width: 65px;
+  cursor: pointer;
+}
+
+.page-top img:hover {
+  opacity: 0.7;
+  transition: all 0.7s;
+}
+
+/*footer*/
+footer {
+  padding-top: 100px;
+  width: 60%;
+  margin:0 auto;
+  background-color:rgba(255,255,255,0.9);
+  text-align: center;
+}
+
+/*ドロップダウンメニュー*/
+#spnavi {
+  display: none;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width:1024px) {
+  body {
+    width: 100%;
+  }
+
+  .skill-list h3 {
+    font-size: 24px;
+  }
+
+  .about img {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width:768px) {
+ .skill-box {
+   display: block;
+ }
+
+ .skill-list {
+   width: 100%;
+ }
+
+ .about {
+   height: 100%;
+ }
+
+ .about img {
+   width: 50%;
+   float: none;
+   margin: 0 0 10px 110px;
+ }
+
+ /*ドロップダウンメニュー*/
+ #spnavi {
+   display:block;
+   width: 105px;
+}
+
+#spnavi::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ #drop_menu_icon {
+   top:6%;
+   position: absolute;
+   left: 2%;
+   width: 35px;
+   padding-top: 10px;
+   float: left;
+ }
+
+ #drop_menu_text {
+   position: absolute;
+   top:9%;
+   left: 0;
+   width: 70px;
+   padding-top: 15px;
+   float:right;
+   color: #fff;
+ }
+
+ #drop_menu_hidden {
+   top:15%;
+   left:0;
+   padding: 0;
+   float:none;
+   position: absolute;
+ }
+
+ #drop_menu_hidden li {
+   text-align: center;
+   float:none;
+   width: 20%;
+   margin:0;
+   padding: 0;
+   color: black;
+ }
+
+}
+
+@media screen and (max-width:414px) {
+   .header {
+    margin:0;
+  }
+  
+  .header ul {
+    width: 100%;
+  }
+
+  .header ul li {
+    padding-right: 0;
+  }
+
+  .main-top img {
+    height: 200px;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill-box {
+    width: 100%;
+  }
+
+  .skill-list {
+    margin-right: 0;
+  }
+
+  .works {
+    width: 100%;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+}
+

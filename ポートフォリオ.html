@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="ポートフォリオ.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.bgswitcher.js"></script>
+    <script src="turn.js"></script>
+    <script type="text/javascript" src="ポートフォリオ.js"></script>
+    
+    <title>青木 佳太ポートフォリオ</title>
+</head>
+
+<body>
+<!--背景画像自動切り替え--> 
+     <div class="bg-slider">
+   <!--ヘッダー-->
+    <header>
+     <div class="header">
+       <!--ドロップダウンメニュー-->
+       <ul id="spnavi">
+         <li id="drop_menu_icon">
+          <img src="menu_icon_white.gif">
+         </li>
+         <li id="drop_menu_text">
+           メニュー
+         </li>
+       </ul>
+      <ul id="drop_menu_hidden">
+        <li><a href="ポートフォリオ.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+     </div>
+    </header>
+    <!--ここまでヘッダー-->
+
+    <!--ここからメイン-->
+    <main>
+     <div class="main-top">
+       <img src="メイン.jpg">
+      </div>
+
+       <div class="profile">
+        <img src="icon-football01.png">
+       <!--自己紹介文-->
+       <p>はじめまして。Webデザイナーを目指している青木　佳太と申します。<br>
+        <br>
+        前職で培ってきた「お客さま」目線に立った提案を実現すること。<br>
+        企業者目線、利用者目線に直接触れる場所にいたからこそできることを「デザイン」という形にする。<br>
+        <br>
+        デザインを形にし、お客さまに価値を提供できるWebデザイナーを目指しております。
+       </p>
+      </div>
+      
+      <!--スキル-->
+      <div class="skill">
+       <img src="icon-football01.png">
+       <h2>Skill</h2>
+      </div>
+      <!--スキルリスト-->
+      <div class="skill-box">
+       <div class="skill-list">
+         <img src="ノートパソコンのアイコン素材4.png">
+         <h3>Webデザイン</h3>
+         <p>「お客さま目線」と「企業目線」両方の観点からデザインを考え、設計することが可能です。<br>
+         単純にデザインの良さだけでなく、業界事にデザインを考え形にしていくことでプラスαのデザインを提供いたします。<br><br>
+        </p>
+       </div> 
+       <div class="skill-list">
+         <img src="ウィンドウアイコン2.png">
+         <h3>コーディング</h3>
+         <p>HTML,CSSを用いたデザイン。JavaScript,jqueryを用いたコーディング。そしてワードプレス。これらでデザインを形にいたします。<br>
+         デザインで終わるのではなく、クライアントの要望に答える「結果」を出すコーディングを実現いたします。
+        </p>
+       </div> 
+       <div class="skill-list">
+         <img src="書類のアイコン.png">
+         <h3>デザイン</h3>
+         <p>名刺や広告など、前職で実際に体験した「デザイン」における可能性を実現します。<br>
+         特に飲食店などの「質」と「価格」を全面に出した見せ方のデザインで貢献いたします。<br><br><br>
+         </p>
+       </div> 
+      </div>
+
+      <!--works-->
+      <div class="works">
+        <h2>Works</h2>
+       <!--ページめくり-->  
+        <div id="works">
+          <div>
+            <a href="works.html">
+            <img src="works1.png">
+            </a>
+          </div>
+          <div>
+           <a href="works.html">
+            <img src="works2.png">
+          </a>
+          </div> 
+          <div>
+            <a href="works.html">
+            <img src="works3png.png">
+            </a>
+          </div>
+          <div>
+            <a href="works.html">
+            <img src="ポートフォリオ用名刺2.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="works.html">
+            <img src="ポートフォリオ用ポスター.jpg">
+            </a>
+          </div>
+          <div>
+            <a href="works.html">
+            <img src="ピザ店.jpg">
+            </a>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <span id="prevpage">前のページ</span>
+          </li>
+          <li>
+            <span id="nextpage">次のページ</span>
+          </li>
+        </ul>
+      </div>
+
+      <!--About-->
+      <div class="skill">
+        <img src="icon-football01.png">
+        <h2>About</h2>
+       </div>
+       <div class="about">
+         <img src="ブログ1.jpg">
+         <p>福島県須賀川市生まれ３０歳<br>
+          スーパーマーケットで新店２店舗の立ち上げなどに携わり人材育成、チームマネジメント、数値管理などをしてきました。<br>
+          その仕事の傍らWebデザインについて独学で勉強。勉強の中で「自分で解決する力」「自走する力」も同時に身に付けてきました。<br>
+          異業種ではありますが、「お客さまのニーズに答える」力は活かせると考えています。<br>
+          サッカーとゲームが好き。没頭すると時間を忘れてのめり込んでしまう。Webデザインの勉強も気づいたらこんな時間…という事が結構ありました…。
+        </p>
+       </div>
+    </main>
+
+    <!-- pageTopボタン-->
+  	<div class="page-top">
+      <img src="page_top.gif">
+    </div>
+   
+    <!--footer-->
+    <footer>
+      <p>ⓒAoki Keita</p>
+    </footer>
+ </div>
+</body>
+</html>
